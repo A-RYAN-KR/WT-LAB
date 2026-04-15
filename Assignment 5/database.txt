@@ -1,0 +1,10 @@
+CREATE TABLE results (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    prn VARCHAR(20),
+    dsa_total FLOAT,
+    os_total FLOAT,
+    dbms_total FLOAT,
+    toc_total FLOAT,
+    final_percentage FLOAT
+);

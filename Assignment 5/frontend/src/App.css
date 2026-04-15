@@ -1,0 +1,112 @@
+/* General Layout */
+.main-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.header {
+    color: #1e3a8a;
+    /* VIT Blue */
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.student-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.subject-group {
+    margin-bottom: 15px;
+}
+
+.label-text {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* Button */
+.submit-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Result Alert */
+.result-alert {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0fdf4;
+    border-left: 5px solid #22c55e;
+    color: #166534;
+}
+
+.alert-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.percentage-text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+
+    .student-info,
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+}
