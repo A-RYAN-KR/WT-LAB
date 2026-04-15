@@ -3,159 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer | Professional CV</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>Aryan | Professional CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { 
+            /* Professional Blue-Grey Gradient */
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #f8fafc;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .glass-card:hover { 
+            border-color: rgba(96, 165, 250, 0.5);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .skill-badge { 
+            background: rgba(59, 130, 246, 0.2); 
+            border: 1px solid rgba(59, 130, 246, 0.5); 
+            margin: 4px; 
+            padding: 8px 12px;
+            color: #93c5fd;
+        }
+
+        h1, h2, h3 { color: #60a5fa; font-weight: 700; }
+        .section-title { 
+            border-left: 4px solid #3b82f6; 
+            padding-left: 12px; 
+            margin-bottom: 20px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
+
+        .text-muted-custom { color: #94a3b8; }
+    </style>
 </head>
 <body>
-
-    <!-- Video Background Source: Mixkit -->
-    <video autoplay muted loop id="video-bg">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-network-connection-dots-and-lines-setup-22920-large.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <div class="overlay"></div>
 
     <div class="container py-5">
         <div class="row g-4">
             
-            <!-- Left Column: Personal Info -->
             <div class="col-lg-4">
-                <div class="glass-container text-center animate-fade-in">
-                    <img src="avatar.png" alt="Profile" class="avatar">
-                    <h1>Siddharth Sharma</h1>
-                    <p class="text-info fw-bold">Full Stack Developer</p>
-                    <hr class="my-4 border-secondary">
+                <div class="glass-card text-center">
+                    <img src="https://via.placeholder.com/120" class="rounded-circle border border-3 border-primary mb-3" alt="Profile">
+                    <h2>Aryan</h2>
+                    <p class="text-info mb-4">Full Stack Developer | VIT Pune</p>
                     
-                    <div class="contact-info text-start">
-                        <p><i class="fas fa-envelope"></i> siddharth.dev@example.com</p>
-                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                        <p><i class="fas fa-location-dot"></i> Pune, India</p>
-                        <p><i class="fas fa-globe"></i> www.siddharth.dev</p>
+                    <div class="text-start">
+                        <p class="small mb-1"><i class="bi bi-geo-alt"></i> 📍 Pune, Maharashtra</p>
+                        <p class="small mb-1">📧 aryan@example.com</p>
+                        <p class="small">💻 HP Laptop 15s | Java Dev</p>
                     </div>
 
-                    <div class="mt-4">
-                        <a href="#" class="btn-custom w-100 mb-2 mt-2">Download CV</a>
-                        <div class="d-flex justify-content-center gap-3 mt-3">
-                            <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="text-white fs-4"><i class="fab fa-github"></i></a>
-                            <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                    <div class="mt-4 text-start">
+                        <h5 class="section-title">Technical Skills</h5>
+                        <div class="d-flex flex-wrap">
+                            <span class="badge skill-badge">Java</span>
+                            <span class="badge skill-badge">React.js</span>
+                            <span class="badge skill-badge">Node.js</span>
+                            <span class="badge skill-badge">MySQL</span>
+                            <span class="badge skill-badge">Python</span>
+                            <span class="badge skill-badge">Cybersecurity</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="glass-container">
-                    <h3 class="section-title">Technical Skills</h3>
-                    <div class="skill-cloud mt-3">
-                        <span class="skill-badge">React.js</span>
-                        <span class="skill-badge">Node.js</span>
-                        <span class="skill-badge">TypeScript</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">AWS</span>
-                        <span class="skill-badge">Docker</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">MongoDB</span>
-                        <span class="skill-badge">GraphQL</span>
-                        <span class="skill-badge">Git</span>
-                    </div>
-                </div>
-
-                <div class="glass-container">
-                    <h3 class="section-title">Languages</h3>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">English <span class="float-end text-info">Native</span></li>
-                        <li class="mb-2">Hindi <span class="float-end text-info">Fluent</span></li>
-                        <li class="mb-2">German <span class="float-end text-info">Basic</span></li>
-                    </ul>
                 </div>
             </div>
 
-            <!-- Right Column: Details -->
             <div class="col-lg-8">
-                <div class="glass-container">
-                    <h3 class="section-title">About Me</h3>
-                    <p>
-                        Passionate Full Stack Developer with 4+ years of experience in building scalable web applications. 
-                        I specialize in creating high-performance user interfaces and robust backend architectures. 
-                        Always eager to learn new technologies and solve complex architectural challenges.
-                    </p>
-                    <p>
-                        My goal is to deliver clean, maintainable code that provides an exceptional user experience 
-                        while meeting business objectives.
-                    </p>
+                <div class="glass-card">
+                    <h4 class="section-title">Education</h4>
+                    <h5>B.Tech in Computer Engineering</h5>
+                    <p class="mb-0">Vishwakarma Institute of Technology (VIT), Pune</p>
+                    <p class="text-muted-custom small">TY-A | Academic Session 2025-26</p>
                 </div>
 
-                <div class="glass-container">
-                    <h3 class="section-title">Work Experience</h3>
+                <div class="glass-card">
+                    <h4 class="section-title">Key Projects</h4>
                     
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">Senior Software Engineer | TechCorp Inc.</h5>
-                        <p class="text-info small">Jan 2022 - Present</p>
-                        <ul>
-                            <li>Led a team of 5 developers to rewrite the core legacy accounting system using React and Node.js.</li>
-                            <li>Implemented CI/CD pipelines reducing deployment time by 40%.</li>
-                            <li>Optimized database queries, improving application performance by 25%.</li>
-                        </ul>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-white">Agentic Bug Hunter</h5>
+                            <span class="badge bg-primary rounded-pill">Feb 2026</span>
+                        </div>
+                        <p class="text-muted-custom small">AI-driven code analysis tool using LLMs for automated bug identification and suggestion pipelines.</p>
                     </div>
 
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">Full Stack Developer | WebFlow Solutions</h5>
-                        <p class="text-info small">Jun 2019 - Dec 2021</p>
-                        <ul>
-                            <li>Developed 15+ custom web applications for international clients.</li>
-                            <li>Integrated various third-party APIs including Stripe, Twilio, and Google Cloud.</li>
-                            <li>Enhanced mobile responsiveness across all active projects.</li>
-                        </ul>
+                    <div class="mb-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-white">LLM Hallucination Detector</h5>
+                            <span class="badge bg-primary rounded-pill">Mar 2026</span>
+                        </div>
+                        <p class="text-muted-custom small">Verification layer involving claim decomposition and hybrid evidence retrieval to ensure AI accuracy.</p>
                     </div>
                 </div>
 
-                <div class="glass-container">
-                    <h3 class="section-title">Education</h3>
-                    
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">B.Tech in Computer Science</h5>
-                        <p class="text-info">IIT Bombay | 2015 - 2019</p>
-                        <p>Specialized in Artificial Intelligence and Web Technologies. Graduated with honors.</p>
+                <div class="glass-card">
+                    <h4 class="section-title">Experience</h4>
+                    <div class="d-flex justify-content-between">
+                        <h5 class="text-white">Full Stack Intern | Herb's Magic</h5>
+                        <span class="text-info small">2025</span>
                     </div>
-
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">Senior Secondary Education</h5>
-                        <p class="text-info">Delhi Public School | 2013 - 2015</p>
-                        <p>Physics, Chemistry, and Mathematics focus.</p>
-                    </div>
-                </div>
-
-                <div class="glass-container">
-                    <h3 class="section-title">Certifications</h3>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="p-3 border rounded border-secondary bg-dark bg-opacity-25">
-                                <h6 class="mb-1">AWS Certified Solutions Architect</h6>
-                                <p class="small text-secondary mb-0">Amazon Web Services - 2023</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="p-3 border rounded border-secondary bg-dark bg-opacity-25">
-                                <h6 class="mb-1">Meta Front-End Developer Specialization</h6>
-                                <p class="small text-secondary mb-0">Coursera - 2022</p>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="text-muted-custom small mt-2">
+                        <li>Developed responsive web interfaces using React.</li>
+                        <li>Built scalable geocoding pipelines for data analytics.</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth entry effect
+            $('.glass-card').css('opacity', 0).each(function(i) {
+                $(this).delay(200 * i).animate({ opacity: 1 }, 600);
+            });
+        });
+    </script>
 </body>
 </html>
