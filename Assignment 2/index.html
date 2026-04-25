@@ -50,7 +50,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
-        // Data Object containing VIT-specific info
         const data = {
             sdp: {
                 title: "Skill Development Project (SDP)",
@@ -74,7 +73,6 @@
             }
         };
 
-        // Function to update content
         function updateContent(key) {
             const item = data[key];
             const html = `
@@ -82,26 +80,18 @@
                 <h2 class="mt-2 text-primary">${item.title}</h2>
                 <hr>
                 <p class="lead text-secondary">${item.desc}</p>
-                <div class="mt-4">
-                    <button class="btn btn-outline-primary btn-sm">Read Guidelines</button>
-                    <button class="btn btn-primary btn-sm ms-2">View Rubrics</button>
-                </div>
             `;
             $('#content-display').hide().html(html).fadeIn(400);
         }
 
-        // Initial Load
         updateContent('sdp');
 
-        // jQuery Click Event for dynamic tabs
         $('#projectTabs .nav-link').on('click', function(e) {
             e.preventDefault();
             
-            // UI Update
             $('#projectTabs .nav-link').removeClass('active');
             $(this).addClass('active');
 
-            // Logic Update
             const target = $(this).data('target');
             updateContent(target);
         });
