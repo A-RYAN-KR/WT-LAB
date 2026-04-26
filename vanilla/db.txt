@@ -1,0 +1,11 @@
+CREATE DATABASE vit_db;
+USE vit_db;
+
+CREATE TABLE marks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100),
+    s1_m INT, s1_e INT,
+    s2_m INT, s2_e INT,
+    s3_m INT, s3_e INT,
+    s4_m INT, s4_e INT
+);
